@@ -17,11 +17,68 @@
     <p id="demo-7"></p>
     <p id="demo-8"></p>
     <p id="demo-9"></p>
+    <p id="demo-10"></p>
+    <p id="demo-11"></p>
+    <p id="demo-12"></p>
+    <p id="demo-13"></p>
+    <p id="demo-14"></p>
+    <p id="demo-15"></p>
+    <p id="demo-16"></p>
+    <p id="demo-17"></p>
+    <p id="demo-18"></p>
 
     <script>
-        //Assignment operator:=
+        /*Assignment operator*/
+        //The = operator
         let x = 2;
         let y= 4;
+
+        //The += operator
+        let q;
+        q = 4;
+        q += 2; 
+        document.getElementById("demo-10").innerHTML = q;
+
+        //The -= operator
+        q = 5;
+        q -= 3;
+        document.getElementById("demo-11").innerHTML = q;
+
+        //The *= operator 
+        q = 5;
+        q *= 3;
+        document.getElementById("demo-12").innerHTML = q;
+
+        //The *= operator 
+        q = 5;
+        q **= 3;
+        document.getElementById("demo-13").innerHTML = q;
+
+        //The /= operator 
+        q = 5;
+        q /= 5;
+        document.getElementById("demo-14").innerHTML = q;
+
+        //The /= operator 
+        q = 5;
+        q %= 3;
+        document.getElementById("demo-15").innerHTML = q;
+
+        //The &&= operator..it is used between two values..if the first is true, the second value is assigned  
+        q = true;
+        let h = q &&= 3;
+        document.getElementById("demo-16").innerHTML = h;
+        
+        //The ||= operator..it is used between two values..if the first is false, the second value is assigned  
+        q = false;
+        let n =q ||= 3;
+        document.getElementById("demo-17").innerHTML = n;
+
+        //The ??= operator(Nullish coalescing operatot)..it is used between two values..if the first is null or undefined, the second value is assigned  
+        q = null;
+        let o = q ??= 3;
+        document.getElementById("demo-16").innerHTML = o;
+        
        /*Arithmetic operators*/
         //Addition operator:+
         let z = x + y;
