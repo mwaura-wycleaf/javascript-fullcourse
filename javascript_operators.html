@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <p id="demo-1"></p>
+    <p id="demo-2"></p>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
+    <p id="demo-5"></p>
+    <p id="demo-6"></p>
+    <p id="demo-7"></p>
+    <p id="demo-8"></p>
+    <p id="demo-9"></p>
+
+    <script>
+        //Assignment operator:=
+        let x = 2;
+        let y= 4;
+       /*Arithmetic operators*/
+        //Addition operator:+
+        let z = x + y;
+        document.getElementById("demo").innerHTML = z;
+
+        //Multiplication operator:*
+        let m = x * y;
+        document.getElementById("demo-1").innerHTML = m;
+
+        //Subtraction:-
+        let s = y - x;
+        document.getElementById("demo-4").innerHTML = s;
+
+        //Division: /
+        let d = y / x;
+        document.getElementById("demo-5").innerHTML = d;
+
+        //Modulus/remainder; %
+        let r = y % x;
+        document.getElementById("demo-6").innerHTML = r;
+
+        //increment
+        x++
+        document.getElementById("demo-7").innerHTML = x;
+
+        //decrement
+        y--
+        document.getElementById("demo-8").innerHTML = y;
+
+        //Exponentiation
+        let e = y**x
+        document.getElementById("demo-9").innerHTML = e;
+        //Concatenation
+
+        let text1 = "What a very";
+        let text2 = "nice day"
+        document.getElementById("demo-2").innerHTML = text1 + " " + text2;
+
+        //Adding Strings and numbers...type coercion
+        let c = "5" + 4;
+        document.getElementById("demo-3").innerHTML = c;
+
+    </script>
+</body>
+</html>
