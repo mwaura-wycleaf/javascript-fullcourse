@@ -9,6 +9,7 @@
     <p id="demo"></p>
     <p id="demo-1"></p>
     <p id="demo-2"></p>
+    <p id="demo-3"></p>
     <script>
         //if and nested if
         let hour = 9;
@@ -47,6 +48,16 @@
         }
 
         document.getElementById("demo-2").innerHTML = voteStatus;
+
+        //Ternary operator
+        let price = 10;
+        let isMember = true;
+        let discount = isMember ? 0.2 : 0 ;
+        let total = 10 - (price * discount);
+
+        document.getElementById("demo-3").innerHTML = total;
+
+
 
     </script>
 </body>
