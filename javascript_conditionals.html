@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo-1"></p>
+    <script>
+        //if and nested if
+        let hour = 9;
+        let greeting;
+
+        if (hour < 18){
+         greeting ="Good day"
+        }
+        document.getElementById("demo").innerHTML = greeting;
+
+        let age = 16;
+        let country = "USA";
+        let text = "You cannot drive";
+
+        //if (country == "USA") {
+         //   if(age >= 16){
+               // text = "You can drive"
+         //   }
+       // }
+       if (country = "USA" && age >=16) {
+        text = "You can drive"
+       }
+        document.querySelector("#demo-1").innerHTML = text;
+
+        //Alternative for nested if is using logical && operator
+    </script>
+</body>
+</html>
