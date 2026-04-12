@@ -8,6 +8,7 @@
 <body>
     <p id="demo"></p>
     <p id="demo-1"></p>
+    <p id="demo-2"></p>
     <script>
         //if and nested if
         let hour = 9;
@@ -27,12 +28,26 @@
                // text = "You can drive"
          //   }
        // }
+       //Alternative for nested if is using logical && operator
        if (country = "USA" && age >=16) {
         text = "You can drive"
        }
         document.querySelector("#demo-1").innerHTML = text;
 
-        //Alternative for nested if is using logical && operator
+        //Else and else if 
+        let voteAge = Number("hdd");
+        let voteStatus;
+
+        if (voteAge >= 18) {
+          voteStatus = "Eligible to vote";
+        }else if (Number.isNaN(voteAge)) {
+            voteStatus = "Invaid Entry";
+        }else {
+            voteStatus = "Ineligible to vote"
+        }
+
+        document.getElementById("demo-2").innerHTML = voteStatus;
+
     </script>
 </body>
 </html>
