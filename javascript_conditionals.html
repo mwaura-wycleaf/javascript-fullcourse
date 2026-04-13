@@ -10,6 +10,7 @@
     <p id="demo-1"></p>
     <p id="demo-2"></p>
     <p id="demo-3"></p>
+    <p id="demo-4"></p>
     <script>
         //if and nested if
         let hour = 9;
@@ -57,7 +58,38 @@
 
         document.getElementById("demo-3").innerHTML = total;
 
+        //Switch statement
+        let day;
+        let date = new Date().getDay();
+        console.log(date);
 
+        switch (date) {
+            case 0 :
+            day = "Sunday";
+            break;
+            case 1 :
+            day = "Monday";
+            break;
+            case 2 :
+            day = "Tuesday";
+            break;
+            case 3 :
+            day = "Wednesday";
+            break;
+            case 4:
+            day = "Thursday";
+            break;
+            case 5 :
+            day = "Friday";
+            break;
+            case 6 :
+            day = "Saturday";
+            break;
+            default:
+            day = "No match";
+        }
+
+       document.getElementById("demo-4").innerHTML = day;
 
     </script>
 </body>
