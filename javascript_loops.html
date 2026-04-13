@@ -7,6 +7,8 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="demo-1"></p>
+    <P id="demo-2"></P>
     <script>
         //For loop
         const cars = ["BMW", "Volvo", "Saab", "Ford"];
@@ -18,6 +20,29 @@
         }
 
         document.getElementById("demo").innerHTML = text;
+
+        //while loop
+        let $text = "";
+
+        let $i = 0;
+        while ($i < 10){
+            $text += "The number is " + $i + "<br>";
+            $i++;
+        }
+
+        document.getElementById("demo-1").innerHTML = $text;
+
+        //do...while loop
+        let _text = "";
+        let _i = 0;
+
+        do {
+            _text += "<br>The number is " + _i;
+            _i++;
+        }
+        while(_i <= 10);
+
+        document.getElementById("demo-2").innerHTML = _text;
     </script>
 </body>
 </html>
