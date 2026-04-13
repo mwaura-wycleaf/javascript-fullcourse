@@ -8,7 +8,9 @@
 <body>
     <p id="demo"></p>
     <p id="demo-1"></p>
-    <P id="demo-2"></P>
+    <p id="demo-2"></p>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
     <script>
         //For loop
         const cars = ["BMW", "Volvo", "Saab", "Ford"];
@@ -43,6 +45,26 @@
         while(_i <= 10);
 
         document.getElementById("demo-2").innerHTML = _text;
+
+        //break statement
+        let texty = "";
+
+        for (let index = 0; index < 10; index++){
+            if (index === 3){break;}
+            texty += "<br>The number is " + index;
+        }
+
+        document.getElementById("demo-3").innerHTML = texty;
+
+        //continue statement
+        let _texty = "";
+
+        for (let _index = 0; _index < 10; _index++){
+            if (_index === 3){continue;}
+            _texty += "<br>The number is " + _index;
+        }
+
+        document.getElementById("demo-4").innerHTML = _texty;
     </script>
 </body>
 </html>
