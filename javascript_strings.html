@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo-1"></p>
+    <p id="demo-2"></p>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
+    <script>
+        let text = "Mwaura";// You can also use single quotes instead of double quotes....'Mwaura'
+        document.querySelector("#demo").innerHTML = text ;
+
+        //Template Strings
+        let _text = `My name is Mwaura Wycliff "Ng'ang'a"`
+        document.querySelector("#demo-1").innerHTML = _text ;
+
+        //Multiline strings
+        let $text = 
+        
+        `The quick
+        brown fox
+        jumps over
+        the lazy dog`;
+        document.querySelector("#demo-2").innerHTML = $text ;
+
+        //interpolation- template strings allows variable names in strings
+       let firstName = "Wycliff";
+       let secondName = "Mwaura";
+
+       let text1 = `Welcome back ${firstName}, ${secondName}!`;
+       document.querySelector("#demo-3").innerHTML = text1 ;
+          
+       //Expression substitution
+       let price = 10;
+       let VAT = 0.25;
+
+       let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+       document.querySelector("#demo-4").innerHTML = total ;
+
+    </script>
+</body>
+</html>
