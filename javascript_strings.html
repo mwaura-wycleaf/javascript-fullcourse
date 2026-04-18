@@ -11,6 +11,22 @@
     <p id="demo-2"></p>
     <p id="demo-3"></p>
     <p id="demo-4"></p>
+    <p id="demo-5"></p>
+    <p id="demo-6"></p>
+    <p id="demo-7"></p>
+    <p id="demo-8"></p>
+    <p id="demo-9"></p>
+    <p id="demo-10"></p>
+    <p id="demo-11"></p>
+    <p id="demo-12"></p>
+    <p id="demo-13"></p>
+    <p id="demo-14"></p>
+    <p id="demo-15"></p>
+    <p id="demo-16"></p>
+    <p id="demo-17"></p>
+    <p id="demo-18"></p>
+    <p id="demo-19"></p>
+    <p id="demo-20"></p>
     <script>
         let text = "Mwaura";// You can also use single quotes instead of double quotes....'Mwaura'
         document.querySelector("#demo").innerHTML = text ;
@@ -32,8 +48,8 @@
        let firstName = "Wycliff";
        let secondName = "Mwaura";
 
-       let text1 = `Welcome back ${firstName}, ${secondName}!`;
-       document.querySelector("#demo-3").innerHTML = text1 ;
+       let text_1 = `Welcome back ${firstName}, ${secondName}!`;
+       document.querySelector("#demo-3").innerHTML = text_1 ;
           
        //Expression substitution
        let price = 10;
@@ -42,6 +58,82 @@
        let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
        document.querySelector("#demo-4").innerHTML = total ;
 
+       //String Methods
+       //returns the length of string
+       let name = "ABCDEFG";
+       document.querySelector("#demo-5").innerHTML = name.length ;
+       
+       //charAt()- returns the character at at a speciified position
+       document.querySelector("#demo-6").innerHTML = name.charAt(0) ;
+
+       //at() method
+       document.querySelector("#demo-7").innerHTML = name.at(4) ;
+
+       //property access[];
+       document.querySelector("#demo-8").innerHTML = name[0] ;
+        
+       //String concat()
+
+       let text1 = "wycliff";
+       let text2 = "Mwaura"
+       let result = text1.concat(" ", text2)
+
+       document.querySelector("#demo-9").innerHTML = result;
+
+       //Extracting strings
+       //The slice() method
+       let fruits = "Apple, Banana, Kiwi";
+       let result_1 = fruits.slice(0,  6);//From 0 to 5
+       let result_2 = fruits.slice(0);
+       let result_3 = fruits.slice(-12);
+
+       document.querySelector("#demo-10").innerHTML = result_1;
+       document.querySelector("#demo-11").innerHTML = result_2;
+       document.querySelector("#demo-12").innerHTML = result_3;
+       
+       //The substring() method-it is similar to slice only that any values less than 0 is trated as zero
+       let result_4 = fruits.substring(-1);
+       
+       document.querySelector("#demo-13").innerHTML = result_4;
+
+       //substr() method..worth a mention but not being widely used, it is similar to slice() only that in substr(), the second parameter specifies the length of the extracted part
+
+       //To upperCase and lowercase
+       let test1_result = text1.toUpperCase();
+       let test2_result = text2.toLowerCase();
+       document.querySelector("#demo-14").innerHTML = test1_result ;
+       document.querySelector("#demo-15").innerHTML = test2_result ;
+
+       //trim() method- removes whitespace from both ends of a string
+       //trimStart()- removes whitespace from the start of string
+       //trinEnd()- removes whitespace from end of string
+       let __text = "   Hello there  ";
+       let ___text = __text.trim();
+
+       document.querySelector("#demo-15").innerHTML = `Length text1 = ${__text.length}<br>Length text2 = ${___text.length}` ;
+
+       //JS padding
+       //padStart and padEnd
+       let phoneNumber = "07";
+       let padded = phoneNumber.padStart(4, "*");
+       let __padded = phoneNumber.padEnd(4,"*");
+       document.querySelector("#demo-16").innerHTML = padded;
+       document.querySelector("#demo-17").innerHTML = __padded;
+
+       //Repeat method
+       let textRepeat = __text.repeat(2);
+       document.querySelector("#demo-18").innerHTML = textRepeat;
+
+       //Replace method
+       let textReplace = __text.replace("there", "friend");
+       document.querySelector("#demo-19").innerHTML = textReplace ;
+       //replaceAll() allows you to specify a regular expression instead of a string to be replaced.. for instance if the word cat is repeated a couple of times in a string you can use the replaceAll method to replace it with some other word
+
+       //Split() method
+
+       let word = "r,e,f,u,g,e";
+       const wordArray = word.split(",");
+       document.querySelector("#demo-20").innerHTML = wordArray[0];
     </script>
 </body>
 </html>
