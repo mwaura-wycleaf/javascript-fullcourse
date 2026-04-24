@@ -9,7 +9,8 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
-   
+    <p id="demo3"></p>
+    <p id="demo4"></p>
     <script>
         let x = 123; //number without decimals
         let y = 3.149; //number with decimals
@@ -32,6 +33,12 @@
            let exp2 = y.toExponential(3);
            let exp3 = y.toExponential(4);
            document.querySelector("#demo2").innerHTML = exp1 +"<br>"+exp2 +"<br>" +exp3;
+
+           //toFixed method
+           document.getElementById("demo3").innerHTML = y.toFixed() + "<br>" + y.toFixed(2) + "<br>" + y.toFixed(4)
+
+           //toPrecision method
+             document.getElementById("demo4").innerHTML = y.toPrecision() + "<br>" + y.toPrecision(2) + "<br>" + y.toPrecision(4)
     </script>
 </body>
 </html>
