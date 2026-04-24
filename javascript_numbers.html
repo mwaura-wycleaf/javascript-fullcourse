@@ -11,6 +11,10 @@
     <p id="demo2"></p>
     <p id="demo3"></p>
     <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
     <script>
         let x = 123; //number without decimals
         let y = 3.149; //number with decimals
@@ -45,6 +49,16 @@
 
             //the number method...used to convert JS variables to numbers
             document.getElementById("demo6").innerHTML = Number("John") + "<br>" + Number("10") + "<br>" + Number(new Date("1970-01-01"));
+
+            //parseInt method..returns a whole number after parsing a string
+            document.getElementById("demo7").innerHTML = parseInt("-10") + "<br>" + parseInt("-10.33") + "<br>" + parseInt(new Date("1970-01-01")) + "<br>" + parseInt("10 years") + "<br>" + parseInt("years 10") ;
+
+            //parseFloat method
+            document.getElementById("demo8").innerHTML = parseFloat("-10") + "<br>" + parseFloat("-10.33") + "<br>" + parseFloat("10 6") + "<br>" + parseFloat("10 years") + "<br>" + parseFloat("years 10") ;
+
+            //Number.isInteger method.... returns true if argument is integer
+            //Number.isFinite method.... returns true if argument is not infinity
+            //Number.isNaN method... returns true if argument is NaN
     </script>
 </body>
 </html>
