@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<p id="demo"></p>
     <script>
         //function syntax
         /*
@@ -14,6 +14,13 @@
             //function Body
         }
        */
+       //Function invocation-- a function can be invoked or called mors than once....when you access the function without (), it returns the function itself
+       function sayHello() {
+        return "Hello World!"
+       }
+       let greetings = sayHello();
+
+       document.getElementById("demo").innerHTML = greetings;
     </script>
 </body>
 </html>
