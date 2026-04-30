@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-<p id="demo"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         //function syntax
         /*
@@ -21,6 +23,24 @@
        let greetings = sayHello();
 
        document.getElementById("demo").innerHTML = greetings;
+
+       //function parameters
+       function multiply(a, b) {
+        return a * b;
+       }
+       let result1 = multiply(2, 3);
+       let result2 = multiply(98, 74);
+
+       document.getElementById("demo1").innerHTML = "first answer: " + result1 + "<br>" + "second answer: " + result2;
+
+       function sayHi(fName, sName ="Milner") {//Function parameters
+        //In this case the sName has a default parameter value predefined. In the case that the argument is not defined in the function invocation, the default parameter is used.
+        return `Hi ${fName} ${sName}`;
+       }
+
+       let greeting = sayHi("James", "Matthews");//Function Arguments
+
+       document.getElementById("demo2").innerHTML = greeting;
     </script>
 </body>
 </html>
