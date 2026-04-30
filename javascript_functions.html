@@ -10,6 +10,7 @@
     <p id="demo1"></p>
     <p id="demo2"></p>
     <p id="demo3"></p>
+    <p id="demo4"></p>
     <script>
         //function syntax
         /*
@@ -54,6 +55,20 @@
        let divResult = division(1000, 4);
        document.getElementById("demo3").innerHTML = divResult;
 
+       //function arguments--this are the real values passed to and received by the function
+       function findMax() {
+        let max = -Infinity;
+
+        for (let i = 0; i < arguments.length; i++){
+            if (arguments[i] > max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+       }
+
+       let maxNumber = findMax(4, 5, 6);
+       document.getElementById("demo4").innerHTML = maxNumber;
 
     </script>
 </body>
