@@ -9,6 +9,7 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
     <script>
         //function syntax
         /*
@@ -41,6 +42,19 @@
        let greeting = sayHi("James", "Matthews");//Function Arguments
 
        document.getElementById("demo2").innerHTML = greeting;
+
+       //Function return..a function stops executing once it reaches a return statement
+       //if a function does not return a value, storing in a variable will give undefined 
+       function division(a, b) {
+        return "Invalid";
+        //This line will never run, exits after the first return statement
+        return a / b;
+       }
+
+       let divResult = division(1000, 4);
+       document.getElementById("demo3").innerHTML = divResult;
+
+
     </script>
 </body>
 </html>
