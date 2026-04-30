@@ -11,6 +11,9 @@
     <p id="demo2"></p>
     <p id="demo3"></p>
     <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
     <script>
         //function syntax
         /*
@@ -75,10 +78,28 @@
        function getAge(YOB) {
         return 2026 - YOB;
        }
+       /*
        //Function expression--They can not be called before being declared , this is a special trait by a functional declaration
        let getAge = function (YOB) {
         return 2026 - YOB;
        }
+        */
+       //Arrow functions
+
+       const addition = (a, b) => a + b;
+
+       let addResult = addition (4, 6);
+       document.getElementById("demo5").innerHTML = addResult;
+
+       const greetMe = () => "Jambo Kenya";
+
+       let $greetings = greetMe();
+       document.getElementById("demo6").innerHTML = $greetings;
+
+       let square = x => x**2;
+
+       let squareResult = square(5);
+        document.getElementById("demo7").innerHTML = squareResult;
     </script>
 </body>
 </html>
