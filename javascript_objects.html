@@ -33,6 +33,12 @@
         person.location = "USA";
 
         document.querySelector("#demo2").innerHTML = `I will be turning ${person.age} next year in the ${person["location"]}`;
+
+        //Deleting a property
+
+        delete person.secondName;
+
+        console.log(person);
     </script>
 </body>
 </html>
