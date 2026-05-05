@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="demo">
+    <p id="demo1">
     <script>
         //person object with three properties
         const person = {
@@ -17,8 +18,11 @@
 
         let details = `I am ${person.firstName} ${person.secondName} and i am ${person.age} years old`
         console.log(details);
+        let details_bracketnotation = ` I am ${person["firstName"]} ${person["secondName"]} and i am ${person["age"]} years old`
+        console.log(details_bracketnotation)
 
         document.querySelector("#demo").innerHTML = details;
+        document.querySelector("#demo1").innerHTML = details_bracketnotation;
     </script>
 </body>
 </html>
