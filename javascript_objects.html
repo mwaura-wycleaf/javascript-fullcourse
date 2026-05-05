@@ -8,6 +8,7 @@
 <body>
     <p id="demo">
     <p id="demo1">
+    <p id="demo2">
     <script>
         //person object with three properties
         const person = {
@@ -23,6 +24,15 @@
 
         document.querySelector("#demo").innerHTML = details;
         document.querySelector("#demo1").innerHTML = details_bracketnotation;
+
+        //Changing object properties
+        person.age = 18;
+        
+
+        //Adding new properties
+        person.location = "USA";
+
+        document.querySelector("#demo2").innerHTML = `I will be turning ${person.age} next year in the ${person["location"]}`;
     </script>
 </body>
 </html>
