@@ -10,6 +10,7 @@
     <p id="demo1">
     <p id="demo2">
     <p id="demo3">
+    <p id="demo4">
     <script>
         //person object with three properties
         const person = {
@@ -44,6 +45,19 @@
         //check if a property exists...it returns true or false
         let presence = ("firstName" in person)
         document.getElementById("demo3").innerHTML = presence;
+
+        //Nested objects
+        const myObj = {
+            name : "John",
+            age :30,
+            myCars: {
+                car1:"Ford"
+            }
+        }
+
+        //Accessing nested objects
+        let nestedObj = myObj.myCars.car1;
+        document.querySelector("#demo4").innerHTML = nestedObj;
     </script>
 </body>
 </html>
