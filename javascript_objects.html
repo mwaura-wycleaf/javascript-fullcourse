@@ -11,6 +11,7 @@
     <p id="demo2">
     <p id="demo3">
     <p id="demo4">
+    <p id="demo5">
     <script>
         //person object with three properties
         const person = {
@@ -58,6 +59,19 @@
         //Accessing nested objects
         let nestedObj = myObj.myCars.car1;
         document.querySelector("#demo4").innerHTML = nestedObj;
+
+        //Javasript object methods
+        //Addition of methods is the same as adding the usual properties
+        const $person = {
+            firstName: "James",
+            lastName: "Egeza",
+            age: 50,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.querySelector("#demo5").innerHTML =  $person.fullName();
     </script>
 </body>
 </html>
