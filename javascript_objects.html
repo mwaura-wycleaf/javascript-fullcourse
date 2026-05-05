@@ -9,6 +9,7 @@
     <p id="demo">
     <p id="demo1">
     <p id="demo2">
+    <p id="demo3">
     <script>
         //person object with three properties
         const person = {
@@ -39,6 +40,10 @@
         delete person.secondName;
 
         console.log(person);
+        
+        //check if a property exists...it returns true or false
+        let presence = ("firstName" in person)
+        document.getElementById("demo3").innerHTML = presence;
     </script>
 </body>
 </html>
