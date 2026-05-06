@@ -15,6 +15,7 @@
     <p id="demo6">
     <p id="demo7">
     <p id="demo8">
+    <p id="demo9">
     <script>
         //person object with three properties
         const person = {
@@ -104,6 +105,15 @@
         };
 
         document.getElementById("demo8").innerHTML = text;
+
+        //using object.values() to create an array from the object
+
+        let myArray = Object.values(person);
+        console.log(myArray);
+
+        let arrayToString = myArray.toString();
+
+        document.getElementById("demo9").innerHTML = arrayToString;
 
     </script>
 </body>
