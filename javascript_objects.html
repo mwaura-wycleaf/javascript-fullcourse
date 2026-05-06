@@ -13,6 +13,8 @@
     <p id="demo4">
     <p id="demo5">
     <p id="demo6">
+    <p id="demo7">
+    <p id="demo8">
     <script>
         //person object with three properties
         const person = {
@@ -91,6 +93,18 @@
         };
          
         document.getElementById("demo6").innerHTML = person2.hello() + "<br><br>" + person1.hello();
+
+        //Displaying object properties
+        document.getElementById("demo7").innerHTML = person;
+
+        //using for...in loop
+        let text = "";
+        for (let item in person){
+            text += person[item] + " ";
+        };
+
+        document.getElementById("demo8").innerHTML = text;
+
     </script>
 </body>
 </html>
