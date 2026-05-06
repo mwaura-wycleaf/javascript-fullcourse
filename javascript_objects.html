@@ -12,6 +12,7 @@
     <p id="demo3">
     <p id="demo4">
     <p id="demo5">
+    <p id="demo6">
     <script>
         //person object with three properties
         const person = {
@@ -72,6 +73,24 @@
         };
 
         document.querySelector("#demo5").innerHTML =  $person.fullName();
+
+        //The this keyword
+
+        const person1 = {
+            name: 'Sam',
+            hello: function () {
+                return "Hello " + this.name;
+            }
+        };
+
+        const person2 = {
+            name: 'Pam',
+            hello: function () {
+                return "Hello " + this.name;
+            }
+        };
+         
+        document.getElementById("demo6").innerHTML = person2.hello() + "<br><br>" + person1.hello();
     </script>
 </body>
 </html>
