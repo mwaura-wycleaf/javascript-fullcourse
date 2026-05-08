@@ -8,6 +8,7 @@
 <body>
     <p id="demo"></p>
     <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         /*new Date(year, month, day, hours, minutes, seconds, ms )*/
         const theDate = new Date();
@@ -15,6 +16,16 @@
 
         const anotherDate = new Date("2022-03-25");
         document.querySelector("#demo1").innerHTML = anotherDate;
+
+        //date string
+
+        const dateString = new Date("October 13, 2024 10:20")
+        document.querySelector("#demo2").innerHTML = dateString;
+        
+        /*Javascript counts months from 0 to 11 
+        january being zero and december being 11
+        when you write a number gretaer than 11 it 
+        does not result to an error, it is an overflow to the next year*/
 
     </script>
 </body>
