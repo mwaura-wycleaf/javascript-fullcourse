@@ -13,6 +13,7 @@
     <p id="demo4"></p>
     <p id="demo5"></p>
     <p id="demo6"></p>
+    <p id="demo7"></p>
     <script>
         /*new Date(year, month, day, hours, minutes, seconds, ms )*/
         const theDate = new Date();
@@ -41,6 +42,10 @@
          document.querySelector("#demo4").innerHTML = theDate.toDateString();
          document.querySelector("#demo5").innerHTML = theDate.toUTCString();
          document.querySelector("#demo6").innerHTML = theDate.toISOString();
+
+         //Date Parsing
+         let msec = Date.parse("2012,3,21");
+         document.querySelector("#demo7").innerHTML = msec;//converts date string to milliseconds
     </script>
 </body>
 </html>
