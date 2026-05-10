@@ -9,6 +9,10 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
     <script>
         /*new Date(year, month, day, hours, minutes, seconds, ms )*/
         const theDate = new Date();
@@ -28,9 +32,15 @@
         does not result to an error, it is an overflow to the next year*/
 
         //ms..miliseconds
+        //Javascript stores dates as number 0f milliseconds from 1st january 1970
         const msDate = new Date(364000);
         console.log(msDate);
-      //Javascript stores dates as number 0f miliseconds from 1st january 1970
+
+        //Displaying dates 
+         document.querySelector("#demo3").innerHTML = theDate.toString();
+         document.querySelector("#demo4").innerHTML = theDate.toDateString();
+         document.querySelector("#demo5").innerHTML = theDate.toUTCString();
+         document.querySelector("#demo6").innerHTML = theDate.toISOString();
     </script>
 </body>
 </html>
