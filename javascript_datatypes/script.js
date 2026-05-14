@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-     //string data type
+  //string data type
      let name = "Sam Milby";
 
      //number data type
@@ -46,6 +37,3 @@
         console.log(typeof bigIntNumber); // Output: bigint
         console.log(typeof anotherBigInt); // Output: bigint
         console.log(typeof NaN);
-    </script>
-</body>
-</html>
