@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
-    <p id="demo6"></p>
-    <p id="demo7"></p>
-    <script>
-        /*new Date(year, month, day, hours, minutes, seconds, ms )*/
+/*new Date(year, month, day, hours, minutes, seconds, ms )*/
         const theDate = new Date();
         document.querySelector("#demo").innerHTML = theDate;
 
@@ -50,6 +33,3 @@
          console.log(theDate.getFullYear());
          console.log(theDate.getDate());
          console.log(theDate.getMonth() + 1);
-        </script>
-</body>
-</html>

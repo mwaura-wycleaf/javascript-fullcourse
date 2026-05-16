@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo-1"></p>
-    <p id="demo-2"></p>
-    <p id="demo-3"></p>
-    <p id="demo-4"></p>
-    <script>
-        //For loop
+//For loop
         const cars = ["BMW", "Volvo", "Saab", "Ford"];
         let len = cars.length;
         let text = "";
@@ -65,6 +51,3 @@
         }
 
         document.getElementById("demo-4").innerHTML = _texty;
-    </script>
-</body>
-</html>

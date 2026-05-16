@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
-    <p id="demo6"></p>
-    <p id="demo7"></p>
-    <script>
-        //function syntax
+ //function syntax
         /*
         function functionName(parameter1, argument2) {
             //function Body
@@ -100,6 +83,3 @@
 
        let squareResult = square(5);
         document.getElementById("demo7").innerHTML = squareResult;
-    </script>
-</body>
-</html>

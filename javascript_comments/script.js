@@ -1,0 +1,8 @@
+ let x = 5// This is a single-line comment
+
+        /*
+            This is a multi-line comment, anything between the /* and the *\/ will be ignored by JavaScript
+            let y = 10; // This line will not be executed because it is inside the multi-line comment
+        */
+        document.getElementById("demo").innerHTML = x; // This will display the value of x, which is 5
+        document.getElementById("demo-2").innerHTML = y; // This will cause an error in the console because y is not defined..the value of y will not be displayed in the browser because it is inside the multi-line comment and is not executed by JavaScript

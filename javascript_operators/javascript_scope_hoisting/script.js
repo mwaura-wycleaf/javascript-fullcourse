@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo1"></p>
-    <script>
-        //Global scope
+//Global scope
         let carName = "volvo";
         myCar();
 
@@ -55,7 +44,3 @@
         console.log(_car)
 
         //JS use strict...in strict mode you cannot use an undeclared variable--inorder to use strict mode write "use strict" in the beginning of every .js file
-
-    </script>
-</body>
-</html>

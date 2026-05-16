@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo-1"></p>
-    <p id="demo-2"></p>
-    <p id="demo-3"></p>
-    <script>
-        let x = 5;
+ let x = 5;
         const y = 10;// The value of y cannot be changed because it is a constant
         let z = x + y;
         document.getElementById("demo").innerHTML = x + y;
@@ -22,7 +9,3 @@
         let $lastName = "Smith";
         document.getElementById("demo-2").innerHTML = _lastName;
         document.getElementById("demo-3").innerHTML = $lastName;
-    </script>
-
-</body>
-</html>

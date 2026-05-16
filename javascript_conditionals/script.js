@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo-1"></p>
-    <p id="demo-2"></p>
-    <p id="demo-3"></p>
-    <p id="demo-4"></p>
-    <script>
-        //if and nested if
+     //if and nested if
         let hour = 9;
         let greeting;
 
@@ -90,7 +76,3 @@
         }
 
        document.getElementById("demo-4").innerHTML = day;
-
-    </script>
-</body>
-</html>

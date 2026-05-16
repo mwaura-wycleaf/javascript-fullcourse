@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo"></p>
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
-    <p id="demo6"></p>
-    <p id="demo7"></p>
-    <p id="demo8"></p>
-    <script>
-        let x = 123; //number without decimals
+let x = 123; //number without decimals
         let y = 3.149; //number with decimals
         let z = 123e5; //12300000
         let b = 123e-5 //0.00123
@@ -59,6 +41,3 @@
             //Number.isInteger method.... returns true if argument is integer
             //Number.isFinite method.... returns true if argument is not infinity
             //Number.isNaN method... returns true if argument is NaN
-    </script>
-</body>
-</html>

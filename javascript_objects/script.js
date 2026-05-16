@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="demo">
-    <p id="demo1">
-    <p id="demo2">
-    <p id="demo3">
-    <p id="demo4">
-    <p id="demo5">
-    <p id="demo6">
-    <p id="demo7">
-    <p id="demo8">
-    <p id="demo9">
-    <script>
-        //person object with three properties
+    //person object with three properties
         const person = {
             firstName: "Wycliff",
             secondName: "Ng'ang'a",
@@ -114,7 +95,3 @@
         let arrayToString = myArray.toString();
 
         document.getElementById("demo9").innerHTML = arrayToString;
-
-    </script>
-</body>
-</html>
