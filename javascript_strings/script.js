@@ -53,7 +53,7 @@
        //Extracting strings
        //The slice() method
        let fruits = "Apple, Banana, Kiwi";
-       let result_1 = fruits.slice(0,  6);//From 0 to 5
+       let result_1 = fruits.slice(0,  5);//From 0 to 5
        let result_2 = fruits.slice(0);
        let result_3 = fruits.slice(-12);
 
