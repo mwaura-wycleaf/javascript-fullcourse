@@ -8,6 +8,8 @@
 <body>
     <p>An array is an object type designed for storing data collections </p>
     <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -23,6 +25,13 @@
 
         cars[0] = "Lexus";
         console.log(cars);
+
+        //Array methods
+        //array length
+        document.getElementById("demo1").innerHTML = cars.length;
+
+        //The toString() method
+        document.getElementById("demo2").innerHTML = cars.toString();
     </script> 
 </body>
 </html>
