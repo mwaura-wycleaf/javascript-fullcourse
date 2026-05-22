@@ -12,6 +12,7 @@
     <p id="demo2"></p>
     <p id="demo3"></p>
     <p id="demo4"></p>
+    <p id="demo5"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -40,6 +41,12 @@
 
         //The join() method
         document.getElementById("demo4").innerHTML = cars.join("*");
+
+        //The pop() method...removes the last element of an array
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("demo5").innerHTML = fruits.pop();//It shows the removed element
+        console.log(fruits);
     </script> 
 </body>
 </html>
