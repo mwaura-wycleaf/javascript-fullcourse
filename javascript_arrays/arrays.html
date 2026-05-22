@@ -10,6 +10,8 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -32,6 +34,12 @@
 
         //The toString() method
         document.getElementById("demo2").innerHTML = cars.toString();
+
+        //The at() method
+        document.getElementById("demo3").innerHTML = cars.at(2);
+
+        //The join() method
+        document.getElementById("demo4").innerHTML = cars.join("*");
     </script> 
 </body>
 </html>
