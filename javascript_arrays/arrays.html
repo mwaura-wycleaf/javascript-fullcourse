@@ -57,6 +57,13 @@
         //The slice() method...accepts a parameter that removes an elment(s)
         document.getElementById("demo7").innerHTML = fruits.slice(2, 4);
 
+        //The splice method
+        //The first parameter(2) defines position where the new elements should be added
+        //The second parameter(1) defines how many elements should be removed
+        const foodStuffs = ["flour", "spinach", "peas"];
+        foodStuffs.splice(2,1, "coconut")
+
+        console.log(foodStuffs);
         //The concat() method
         const fruit1 = ["mango"];
         const fruit2 = ["Dragon fruit"];
