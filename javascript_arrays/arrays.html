@@ -13,6 +13,7 @@
     <p id="demo3"></p>
     <p id="demo4"></p>
     <p id="demo5"></p>
+    <p id="demo6"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -46,6 +47,10 @@
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
         document.getElementById("demo5").innerHTML = fruits.pop();//It shows the removed element
+        console.log(fruits);
+
+        //The push() method...Adds an element to the end
+        document.getElementById("demo6").innerHTML = fruits.push("Lemon");
         console.log(fruits);
     </script> 
 </body>
