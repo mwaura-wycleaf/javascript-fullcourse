@@ -17,6 +17,7 @@
     <p id="demo7"></p>
     <p id="demo8"></p>
     <p id="demo9"></p>
+    <p id="demo10"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -82,6 +83,9 @@
         //The indexOf() and lastIndexOf() method
         document.getElementById("demo8").innerHTML = fruits.indexOf("Apple");
         document.getElementById("demo9").innerHTML = fruits.lastIndexOf("Apple");//If there were two instances of apple within the fruits array, this would return the last instance
+
+        //includes...returns a boolean 
+        document.getElementById("demo10").innerHTML = cars.includes("BMW");
     </script> 
 </body>
 </html>
