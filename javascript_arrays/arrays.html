@@ -21,6 +21,7 @@
     <p id="demo11"></p>
     <p id="demo12"></p>
     <p id="demo13"></p>
+    <p id="demo14"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -111,6 +112,16 @@
         function myFunction (value, index, array) {
             txt += value + "<br>" + index + "<br>" + array;
         }
+
+        //map()
+        const numbers2 = numbers.map(myFunction1);
+
+        document.getElementById("demo14").innerHTML = numbers2;
+
+        function myFunction1(value, index, array) {
+            return value * 2;
+        }
+
     </script> 
 </body>
 </html>
