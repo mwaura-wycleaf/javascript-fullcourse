@@ -20,6 +20,7 @@
     <p id="demo10"></p>
     <p id="demo11"></p>
     <p id="demo12"></p>
+    <p id="demo13"></p>
     <script>
         //My first Array
         const cars = ["Saab","volvo", "BMW"];
@@ -91,13 +92,25 @@
 
         //Array sort
         //The sort() method...sorts alphabetically
-         document.getElementById("demo11").innerHTML = fruits.sort();
+        document.getElementById("demo11").innerHTML = fruits.sort();
 
-         //The reverse() method
-          document.getElementById("demo12").innerHTML = fruits.reverse();
+        //The reverse() method
+        document.getElementById("demo12").innerHTML = fruits.reverse();
 
-          /*There are also two important methods the toSorted() and toReversed() methods
-          they differ from their parent methods in one way...Using them you can either sort or reverse an array but in this caes this craeates a new array and does not alter the original*/
+        /*There are also two important methods the toSorted() and toReversed() methods
+        they differ from their parent methods in one way...Using them you can either sort or reverse an array but in this caes this craeates a new array and does not alter the original*/
+
+        //Array iterations
+        //forEach
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt ="";
+        numbers.forEach(myFunction);
+         document.getElementById("demo13").innerHTML = txt;
+
+        function myFunction (value, index, array) {
+            txt += value + "<br>" + index + "<br>" + array;
+        }
     </script> 
 </body>
 </html>
