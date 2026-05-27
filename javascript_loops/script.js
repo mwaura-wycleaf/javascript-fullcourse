@@ -66,3 +66,15 @@ for (let x in person){
 }
 
 console.log(te$xt)
+
+//for...of loop
+//iterating over string
+const name = "Wycliff";
+let nameResult = "";
+
+for (const x of name){
+nameResult += x + "<br>";
+}
+document.getElementById("demo-5").innerHTML = nameResult;
+
+console.log(nameResult)
