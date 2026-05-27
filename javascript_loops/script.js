@@ -77,4 +77,5 @@ nameResult += x + "<br>";
 }
 document.getElementById("demo-5").innerHTML = nameResult;
 
+//It is all the same in arrays, sets, maps
 console.log(nameResult)
