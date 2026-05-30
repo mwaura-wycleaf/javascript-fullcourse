@@ -1,0 +1,115 @@
+ //My first Array
+        const cars = ["Saab","volvo", "BMW"];
+        console.log(cars, typeof cars);
+        document.getElementById("demo").innerHTML = cars;
+
+        //Accessing array
+
+        let car = cars[0];
+        console.log(car);
+
+        //Changing array elements/ reasssigning
+
+        cars[0] = "Lexus";
+        console.log(cars);
+
+        //Array methods
+        //array length
+        document.getElementById("demo1").innerHTML = cars.length;
+
+        //The toString() method
+        document.getElementById("demo2").innerHTML = cars.toString();
+
+        //The at() method
+        document.getElementById("demo3").innerHTML = cars.at(2);
+
+        //The join() method
+        document.getElementById("demo4").innerHTML = cars.join("*");
+
+        //The pop() method...removes the last element of an array
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        document.getElementById("demo5").innerHTML = fruits.pop();//It shows the removed element
+        console.log(fruits);
+
+        //The push() method...Adds an element to the end
+        document.getElementById("demo6").innerHTML = fruits.push("Lemon");
+        console.log(fruits);
+
+        //The slice() method...accepts a parameter that removes an elment(s)
+        document.getElementById("demo7").innerHTML = fruits.slice(2, 4);
+
+        //The splice method
+        //The first parameter(2) defines position where the new elements should be added
+        //The second parameter(1) defines how many elements should be removed
+        const foodStuffs = ["flour", "spinach", "peas"];
+        foodStuffs.splice(2,1, "coconut")
+
+        console.log(foodStuffs);
+        //The concat() method
+        const fruit1 = ["mango"];
+        const fruit2 = ["Dragon fruit"];
+        
+        let concatResult = fruit1.concat("orange",fruit2)
+        console.log(concatResult)
+
+        //The flat() method
+        const myArray = [[2, 4], [2,3], [1,4]];
+        const myNewArray = myArray.flat();
+        console.log(myNewArray)
+
+        //Array search
+        //The indexOf() and lastIndexOf() method
+        document.getElementById("demo8").innerHTML = fruits.indexOf("Apple");
+        document.getElementById("demo9").innerHTML = fruits.lastIndexOf("Apple");//If there were two instances of apple within the fruits array, this would return the last instance
+
+        //includes...returns a boolean 
+        document.getElementById("demo10").innerHTML = cars.includes("BMW");
+
+        //Array sort
+        //The sort() method...sorts alphabetically
+        document.getElementById("demo11").innerHTML = fruits.sort();
+
+        //The reverse() method
+        document.getElementById("demo12").innerHTML = fruits.reverse();
+
+        /*There are also two important methods the toSorted() and toReversed() methods
+        they differ from their parent methods in one way...Using them you can either sort or reverse an array but in this caes this craeates a new array and does not alter the original*/
+
+        //Array iterations
+        //forEach
+        const numbers = [45, 4, 9, 16, 25];
+
+        let txt ="";
+        numbers.forEach(myFunction);
+         document.getElementById("demo13").innerHTML = txt;
+
+        function myFunction (value, index, array) {
+            txt += value + "<br>" + index + "<br>" + array;
+        }
+
+        //map()
+        const numbers2 = numbers.map(myFunction1);
+
+        document.getElementById("demo14").innerHTML = numbers2;
+
+        function myFunction1(value, index, array) {
+            return value * 2;
+        }
+
+        //Array filter
+        const over18 = numbers.filter(myFunction2);
+        console.log(over18)
+        function myFunction2(value) {
+            return value > 18
+        }
+
+        //Array reduce
+
+        const sum = numbers.reduce(myFunction3);
+
+        console.log(sum);
+
+        function myFunction3 (total, value) {
+            return total + value;
+        }
