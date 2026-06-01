@@ -8,3 +8,12 @@ try {
     let text = err.name + "<br>" + err.message;
     document.querySelector("#demo").innerHTML = text;
 }
+
+//type error
+
+try {
+    x(5)
+}catch (error) {
+    let _text = error.name;
+    document.querySelector("#demo1").innerHTML = _text;
+}
