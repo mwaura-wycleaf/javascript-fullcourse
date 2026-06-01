@@ -36,3 +36,11 @@ let cars = ["Saab", "volvo", "BMW", "Lexus", "Honda"]
 let [car1, car2, car3, ...rest] = cars;
 
 document.querySelector("#demo3").innerHTML = rest;
+
+//Swapping variables
+let theFirstName = "Seth";
+let theSecondName = "Alman";
+
+[theFirstName, theSecondName] = [theSecondName, theFirstName]
+
+console.log(theFirstName, theSecondName)
