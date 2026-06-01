@@ -26,6 +26,13 @@ console.log(a2);
 
 let fruits = ["Banana", "Apple", "Orange"];
 
-let [fruit1, fruit2] = fruits;
+let [fruit1,, fruit2] = fruits;
 
-document.querySelector("#demo2").innerHTML = fruit1;
+document.querySelector("#demo2").innerHTML = fruit2;
+
+//The rest operator
+
+let cars = ["Saab", "volvo", "BMW", "Lexus", "Honda"]
+let [car1, car2, car3, ...rest] = cars;
+
+document.querySelector("#demo3").innerHTML = rest;
