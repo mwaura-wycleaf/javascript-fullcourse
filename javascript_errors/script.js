@@ -17,3 +17,12 @@ try {
     let _text = error.name;
     document.querySelector("#demo1").innerHTML = _text;
 }
+
+//range error
+
+try {
+    new Array(-1)
+}catch (err) {
+    let text1 = err.name + "<br>" + err. message;
+    document.querySelector("#demo2").innerHTML = text1;
+}
