@@ -26,3 +26,11 @@ try {
     let text1 = err.name + "<br>" + err. message;
     document.querySelector("#demo2").innerHTML = text1;
 }
+
+//syntax errors
+try {
+    //let $x = Math.floor(4.6;)
+} catch (err) {
+    let theError = err.name + "<br>" + err.message;
+    document.querySelector("#demo3").innerHTML = theError;
+}
