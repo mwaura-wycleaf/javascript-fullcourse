@@ -1,15 +1,23 @@
   //object destructuring
 
-        let person = {
-            firstName:"Ann",
-            secondName:"Dunham",
-            age:50,
-        }
+let person = {
+    firstName:"Ann",
+    secondName:"Dunham",
+    age:50,
+}
 
-        let {firstName, secondName} = person;
+let {firstName, secondName} = person;
 
-        document.querySelector("#demo").innerHTML = firstName + " " + secondName;
+document.querySelector("#demo").innerHTML = firstName + " " + secondName;
 
-        let {secondName: name} = person;
+let {secondName: name} = person;
 
-        document.querySelector("#demo1").innerHTML = name;
+document.querySelector("#demo1").innerHTML = name;
+
+//string destructuring
+  
+let myName = "Wycliff";
+
+let [a1, a2, a3] = myName;
+
+console.log(a2);
