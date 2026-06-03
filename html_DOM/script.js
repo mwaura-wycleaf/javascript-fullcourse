@@ -18,4 +18,6 @@ document.querySelector("#demo3").innerHTML = "This element was accessed using qu
 
 //querySelectorAll-it is used like querySelector only that in this case there is more than one element withthe same id or class name 
 
+//Changing CSS
+document.querySelector(".demo4").style.color = "red";
 
