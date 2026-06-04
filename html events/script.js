@@ -20,5 +20,11 @@ k.addEventListener("keydown", function (event) {
 //event.code
 k2.addEventListener("keydown", function (event) {
 console.log(event.code)
+});
+
+//Load events
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("demo1").innerHTML = "HTML is loaded!"
 })
 
