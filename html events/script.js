@@ -10,3 +10,15 @@ box.addEventListener("mouseover", function() {
 box.addEventListener("mouseout", function() {
     box.innerHTML = "Mouse is out";
 });
+
+//keyboard events
+//event.key
+k.addEventListener("keydown", function (event) {
+    document.getElementById("demo").innerHTML = "You pressed:" + event.key;
+});
+
+//event.code
+k2.addEventListener("keydown", function (event) {
+console.log(event.code)
+})
+
