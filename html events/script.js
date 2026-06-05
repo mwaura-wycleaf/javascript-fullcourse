@@ -36,3 +36,13 @@ function showTime() {
     const time = new Date();
     document.getElementById("clock").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
 }
+
+//settime out
+const btn = document.getElementById("btn");
+btn.addEventListener("click", function() {
+    setTimeout(showMsg, 2000)
+});
+
+function showMsg() {
+document.getElementById("demo2").innerHTML ="Greetings after 2 seconds"
+}
