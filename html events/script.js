@@ -27,4 +27,12 @@ console.log(event.code)
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("demo1").innerHTML = "HTML is loaded!"
 })
+//Apart from DOMContentLoaded there is also load which works almost the same way
 
+//Timing events
+setInterval(showTime, 1000);
+
+function showTime() {
+    const time = new Date();
+    document.getElementById("clock").innerHTML = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+}
