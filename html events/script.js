@@ -46,3 +46,23 @@ btn.addEventListener("click", function() {
 function showMsg() {
 document.getElementById("demo2").innerHTML ="Greetings after 2 seconds"
 }
+
+//set interval and clear interval
+let count = 0;
+let myInterval;
+
+const btnStart = document.getElementById("start");
+const btnStop = document.getElementById("stop");
+
+btnStart.addEventListener("click", function() {
+    myInterval = setInterval(counter, 1000)
+});
+
+btnStop.addEventListener("click", function(){
+    clearInterval(myInterval);
+})
+
+function counter() {
+    count++;
+    document.getElementById("counter").innerHTML = count;
+}
