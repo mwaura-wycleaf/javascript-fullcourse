@@ -43,3 +43,19 @@ function myFunction() {
 }
 
 //Note: Array methods like map, forEach accept callback functions
+
+//sequential operation..from the word sequence
+function displayResult(theResult) {
+    document.getElementById("demo2").innerHTML = theResult;
+}
+
+//function to calculate sum
+function returnSum(num1, num2) {
+    return num1 + num2;
+}
+
+//call the calculate sum
+let result = returnSum(7, 9);
+
+//call the displayResult function
+displayResult(result)
