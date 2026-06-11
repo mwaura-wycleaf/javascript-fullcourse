@@ -136,3 +136,28 @@ console.log($person.fullName.call(person_1))
 
 console.log(greet.apply(person3, ["hello"]))
 console.log($person.fullName.apply(person_1))
+
+//function bind()
+//syantax...const newFunction =functionName.bind (this, arg1, arg2,...);
+const greetJessy = greet.bind(person1, "Hey");
+
+console.log(greetJessy())
+
+let fullNames = $person.fullName.bind(person_1);
+console.log(fullNames())
+
+//when a function is used as a callback, this keyword is lost
+const _person = {
+    firstName:"Shumeira",
+    secondName:"Mheuka",
+    display: function () {
+        document.querySelector("#demo6").innerHTML = this.firstName + " " + this.secondName;
+    }
+}
+ setTimeout(_person.display, 3000)
+
+ //Bind solves the above problem
+
+ let display = _person.display.bind(_person);
+
+ setTimeout(display, 3000)
