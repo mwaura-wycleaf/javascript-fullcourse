@@ -59,3 +59,16 @@ let result = returnSum(7, 9);
 
 //call the displayResult function
 displayResult(result)
+
+//using a callback
+
+function myDisplayer (numberSum) {
+     document.getElementById("demo3").innerHTML = numberSum;
+}
+
+function myCalculator(number1, number2, myCallback){
+let sum = number1 + number2;
+myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer)
