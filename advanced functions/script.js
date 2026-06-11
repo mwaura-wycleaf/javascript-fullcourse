@@ -26,3 +26,12 @@ const obj = {
         return x * y;
     }
 }
+
+//Function callbacks
+ //event handling
+ function displayDate() {
+    document.getElementById("demo").innerHTML = new Date();
+ }
+
+ document.getElementById("myButton").addEventListener("click", displayDate);
+ console.log(new Date())
