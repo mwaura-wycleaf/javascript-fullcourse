@@ -41,3 +41,5 @@ setTimeout(myFunction, 4000)
 function myFunction() {
     document.getElementById("demo1").innerHTML = "there is no much love left"
 }
+
+//Note: Array methods like map, forEach accept callback functions
