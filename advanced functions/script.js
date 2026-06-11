@@ -130,3 +130,9 @@ const person_1 = {
 }
 
 console.log($person.fullName.call(person_1))
+
+//function apply()
+//syntax....functionName.apply(this, [arg1, arg2, ....])
+
+console.log(greet.apply(person3, ["hello"]))
+console.log($person.fullName.apply(person_1))
