@@ -35,3 +35,9 @@
 
  document.getElementById("myButton").addEventListener("click", displayDate);
  console.log(new Date())
+
+//Asynchronous operations...they are executed at a later time
+setTimeout(myFunction, 4000)
+function myFunction() {
+    document.getElementById("demo1").innerHTML = "there is no much love left"
+}
