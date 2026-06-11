@@ -72,3 +72,28 @@ myCallback(sum);
 }
 
 myCalculator(5, 5, myDisplayer)
+
+
+//The this key word
+function thisFunction() {
+    return this;
+}
+
+console.log(thisFunction());
+
+let x = this;
+
+document.getElementById("demo4").innerHTML = "This is:" + x;
+console.log(x);
+
+//Arrow functions in methods
+const person = {
+    firstName: "Lesley",
+    secondName:"Ohara",
+    sayHello: () => {
+        return this.firstName;
+    }
+}
+
+document.getElementById("demo5").innerHTML = person.sayHello();
+
