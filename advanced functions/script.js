@@ -97,3 +97,36 @@ const person = {
 
 document.getElementById("demo5").innerHTML = person.sayHello();
 
+//function call()
+
+const person1 = {
+    name: "Jessy"
+}
+
+const person2= {
+    name: "Jeddy"
+}
+
+const person3 = {
+    name: "Jenny"
+}
+
+function greet(greeting){
+    return greeting + " " + this.name
+}
+
+console.log(greet.call(person2, "Hello"));
+
+//borrowing a method from another object
+const $person = {
+    fullName: function () {
+        return this.firstName + " " + this.secondName
+    }
+}
+
+const person_1 = {
+    firstName:"Eric",
+    secondName:"Debank",
+}
+
+console.log($person.fullName.call(person_1))
