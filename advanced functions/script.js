@@ -161,3 +161,28 @@ const _person = {
  let display = _person.display.bind(_person);
 
  setTimeout(display, 3000)
+
+//Closures...They make it posiible for a function to have "private" variables
+//variables declared without var, const, let are always global
+
+function $myFunction() {
+   a = 4;
+};
+$myFunction();
+document.querySelector("#demo7").innerHTML = a * a;
+console.log(a * a);
+
+function myCounter() {
+    let counter = 0;
+    return function() {
+        counter++;
+        return counter;
+    }
+}
+
+const add = myCounter();
+add();
+add();
+add();
+
+console.log(add());
