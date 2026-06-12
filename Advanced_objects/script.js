@@ -24,7 +24,7 @@ Object.assign(person, person1)
 
 //returns an array of the key/value pairs in an object
 document.getElementById("demo1").innerHTML = Object.entries(person);
-
+//object.values operate the same as .entries
 
 let text = "";
 
