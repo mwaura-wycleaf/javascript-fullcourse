@@ -33,3 +33,13 @@ for (let [title, name] of Object.entries(person1)){
 }
 
 document.getElementById("demo2").innerHTML = text;
+
+//fromEntries...creates an object from a list of key pairs
+
+const fruits = [
+    ["apples", 300],
+    ["pears", 900],
+    ["bananas", 500]
+]
+console.log(Object.fromEntries(fruits))
+
