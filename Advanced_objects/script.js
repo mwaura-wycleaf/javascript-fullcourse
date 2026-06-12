@@ -57,3 +57,25 @@ const person2 = {
 
 document.getElementById("demo3").innerHTML = person2.lang;
 
+//set
+const person3 = {
+    firstName:"simon",
+    language: "NO",
+    set lang(value) {
+        this.language = value;
+    }
+};
+
+person3.lang = "en"
+console.log(person3.language);
+
+//other useful methods
+//add property
+Object.defineProperty(person3, "year", {value: "2008"});
+
+console.log(person3);
+
+//to cahnge property you can use define.property
+
+//Listing object properties
+console.log(Object.getOwnPropertyNames(person3));
