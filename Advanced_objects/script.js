@@ -79,3 +79,14 @@ console.log(person3);
 
 //Listing object properties
 console.log(Object.getOwnPropertyNames(person3));
+
+//object protection
+//Object.preventExtensions...prevents addition of elements to an object
+
+Object.preventExtensions(person3);// this means you cannot add an element to the person object, it throws an error
+
+//Object.seal...prevents addition or deletion of new properties
+Object.seal(person3);//you cannot add or delete
+
+//object.freeze...prevents modification
+Object.freeze(person3);//you cannot change
