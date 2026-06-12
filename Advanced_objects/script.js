@@ -43,3 +43,17 @@ const fruits = [
 ]
 console.log(Object.fromEntries(fruits))
 
+
+//get and set
+//get
+const person2 = {
+    firstName: "Jane",
+    secondName: "Doe",
+    language: "en",
+    get lang() {
+        return this.language;
+    } 
+}
+
+document.getElementById("demo3").innerHTML = person2.lang;
+
