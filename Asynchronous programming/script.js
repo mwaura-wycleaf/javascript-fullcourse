@@ -41,3 +41,5 @@ myPromise.then(
     function(value){myDisplayer1(value)},
 )
 
+//if ok is false it will output Error
+
