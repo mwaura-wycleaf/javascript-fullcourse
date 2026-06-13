@@ -43,3 +43,18 @@ myPromise.then(
 
 //if ok is false it will output Error
 
+//using then() and catch method()
+//then() runs whwn the promise is fulfilled
+function myDisplayer2(_some) {
+    document.querySelector("#demo3").innerHTML += _some + " "
+}
+
+let promise = Promise.resolve("OK");
+
+promise
+.then(
+    function(value){myDisplayer2(value)}
+)
+.catch(
+    function(value){myDisplayer2(value)}
+)
