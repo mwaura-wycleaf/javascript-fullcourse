@@ -19,7 +19,7 @@ function myFunction() {
     document.getElementById("demo1").innerHTML = time.getHours() + ": " + time.getMinutes() + ": " + time.getSeconds();
 }
 
-//Javascript promises...a promise is either fulfilled, pending or rejected
+//Javascript promises...a Promise is either fulfilled, pending or rejected
 //creating a promise object
 function myDisplayer1(some) {
     document.querySelector("#demo2").innerHTML += some + " "
@@ -73,4 +73,31 @@ function(value){myDisplayer3(value)}
 )
 .catch(
     function(value){myDisplayer3(value)}
-)
+) 
+
+
+//Returning a promise
+function myDisplayer4($some) {
+    document.querySelector("#demo5").innerHTML += $some + " "
+}
+//Three functions to run in steps
+function step1() {
+    return Promise.resolve("A");
+}
+function step2(value) {
+    return Promise.resolve(value + "B");
+}
+function step3(value) {
+    return Promise.resolve(value + "C");
+}
+
+step1()
+.then(function(value){
+    return step2(value);
+})
+.then(function(value){
+    return step3(value);
+})
+.then(function(value){
+    myDisplayer4(value);
+})
