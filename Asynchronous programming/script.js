@@ -58,3 +58,19 @@ promise
 .catch(
     function(value){myDisplayer2(value)}
 )
+
+//catch() runs when the promise is rejected
+
+function myDisplayer3(_some) {
+    document.querySelector("#demo4").innerHTML += _some + " "
+}
+
+let $promise = Promise.reject("Error");
+
+$promise
+.then(
+function(value){myDisplayer3(value)}
+)
+.catch(
+    function(value){myDisplayer3(value)}
+)
