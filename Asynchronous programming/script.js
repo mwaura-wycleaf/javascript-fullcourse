@@ -11,3 +11,10 @@ setTimeout(function() {
 }, 2000);
 
 myDisplayer("C");
+
+//Waiting for intervals
+setInterval(myFunction, 1000)
+function myFunction() {
+    let time = new Date();
+    document.getElementById("demo1").innerHTML = time.getHours() + ": " + time.getMinutes() + ": " + time.getSeconds();
+}
