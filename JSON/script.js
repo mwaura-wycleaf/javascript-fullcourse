@@ -43,3 +43,18 @@ const $text = '["Ford", "BMW", "Audi", "Fiat"]';
 console.log(JSON.parse($text)[0])
 
 //Note: functions and dates are not allowed in JSON, you write then as strings and convert them later
+
+//JSON.stringify...it does the exact opposite of JSON.parse
+const obj = {
+    name: "Ahmed",
+    religion:"Islam",
+    city: "Abu Dhabi"
+}
+
+const myJson = JSON.stringify(obj);
+console.log(myJson);
+
+const friends = ["Jamal", "Bakari", "kenya"];
+
+const myJsonFriends = JSON.stringify(friends);
+console.log(myJsonFriends)
