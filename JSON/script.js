@@ -58,3 +58,16 @@ const friends = ["Jamal", "Bakari", "kenya"];
 
 const myJsonFriends = JSON.stringify(friends);
 console.log(myJsonFriends)
+
+//Storing and retrieving data
+//storing
+const $myObj = {name: "Felicia", age: 23, city:"manhattan"}
+const $myJson = JSON.stringify($myObj);
+localStorage.setItem("testJSON", $myJson);
+
+//Retrieving data
+let _text = localStorage.getItem("testJSON");
+let $obj = JSON.parse(_text);
+document.getElementById("demo1").innerHTML = obj.name
+
+//JSON.stringify removes any function from a javascript object, both the key and the value
