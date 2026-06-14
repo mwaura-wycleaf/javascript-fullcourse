@@ -125,3 +125,18 @@ _myFunction().then(
     function(value){myDisplayer5(value)}
 )
 
+//the await keyword...makes a function pause execution and wait for a resolved promise before it continues
+function myDisplayer6($texty) {
+    document.getElementById("demo7").innerHTML = $texty;
+}
+
+function $step1(){
+    return Promise.resolve("A")
+}
+
+async function run() {
+    let value = await $step1();
+    myDisplayer6(value)
+}
+
+run();
