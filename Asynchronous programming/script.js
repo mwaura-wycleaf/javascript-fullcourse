@@ -150,3 +150,12 @@ fetch("data.json")
 .then(function(data){
     console.log(data)
 })
+
+//asynch and wait
+async function loadData() {
+  let response = await fetch(data.json);
+  let data = await response.json();
+  console.log(data)
+}
+
+loadData();
