@@ -62,7 +62,7 @@ promise
 //catch() runs when the promise is rejected
 
 function myDisplayer3(_some) {
-    document.querySelector("#demo4").innerHTML += _some + " "
+    document.querySelector("#demo4").innerHTML += _some;
 }
 
 let $promise = Promise.reject("Error");
@@ -101,3 +101,27 @@ step1()
 .then(function(value){
     myDisplayer4(value);
 })
+
+//async and await...they were craeted to reduce nesting and improve readability
+//the async keyword before a function makes the function return a promise
+async function $myFunction() {
+    return "Hello";
+}
+
+//is the same as
+function $myFunction() {
+    return Promise.resolve("Hello");
+}
+
+function myDisplayer5($texty) {
+    document.getElementById("demo6").innerHTML = $texty;
+}
+
+async function _myFunction() {
+    return "Hello";
+}
+
+_myFunction().then(
+    function(value){myDisplayer5(value)}
+)
+
