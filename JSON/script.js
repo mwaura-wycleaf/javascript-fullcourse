@@ -31,3 +31,15 @@
 /*{
     "middleName":null
 }*/
+
+//JSON.parse...converts JSON to object or value
+const text = '{"name": "John", "age":30}';
+
+const myObj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = myObj.name + "," + myObj.age;
+
+const $text = '["Ford", "BMW", "Audi", "Fiat"]';
+console.log(JSON.parse($text)[0])
+
+//Note: functions and dates are not allowed in JSON, you write then as strings and convert them later
