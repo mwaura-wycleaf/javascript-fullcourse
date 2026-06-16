@@ -31,3 +31,7 @@ console.log(navigator.geolocation)
 //Web API storage
 localStorage.setItem("name", "Lexi Missy")
 document.getElementById("demo-2").innerHTML = localStorage.getItem("name")
+
+//Session storage...it differs with localStorage in that it stores data for only one session
+sessionStorage.setItem("_name", "Isaac Axel");
+document.getElementById("demo-3").innerHTML = sessionStorage.getItem("_name")
