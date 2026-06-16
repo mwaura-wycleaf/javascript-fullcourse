@@ -12,3 +12,18 @@ async function getText(file) {
 }
 
 getText("rete.txt")
+
+//Web Geolocation API...gets the users current location
+let x = document.getElementById("demo-1")
+function getLocation() {
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition)
+    }else {
+        x.innerHTML = "Geolocation is not supported by this browser"
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude:" + position.coords.latitude + "<br>longitude:" + position.coords.longitude;
+}
+console.log(navigator.geolocation)
