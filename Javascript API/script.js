@@ -27,3 +27,7 @@ function showPosition(position) {
     x.innerHTML = "Latitude:" + position.coords.latitude + "<br>longitude:" + position.coords.longitude;
 }
 console.log(navigator.geolocation)
+
+//Web API storage
+localStorage.setItem("name", "Lexi Missy")
+document.getElementById("demo-2").innerHTML = localStorage.getItem("name")
