@@ -34,4 +34,15 @@ document.getElementById("demo-2").innerHTML = localStorage.getItem("name")
 
 //Session storage...it differs with localStorage in that it stores data for only one session
 sessionStorage.setItem("_name", "Isaac Axel");
-document.getElementById("demo-3").innerHTML = sessionStorage.getItem("_name")
+document.getElementById("demo-3").innerHTML = sessionStorage.getItem("_name");
+
+//Web API History
+//The history back() method...it is the same as clicking the back arrow in your browser
+function myFunction() {
+    window.history.back();
+}
+
+//history go() method
+function $myFunction() {
+    window.history.go(-2);
+}
