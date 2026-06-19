@@ -23,3 +23,24 @@ function $loadDoc() {
     $xhttp.open("GET", "ajax_info.txt");
     $xhttp.send();
 }
+
+//Server response
+//getAllResponseHeaders function returns all the header information of a resource, like length, server type, content type, last modeified, etc.
+const _xhttp =new XMLHttpRequest();
+_xhttp.onload = function() {
+       document.getElementById("demo2").innerHTML = this.getAllResponseHeaders();
+    }
+
+    //Send a request to the server
+    _xhttp.open("GET", "ajax_info.txt");
+    _xhttp.send();
+
+//getResponseHeader..returns a specific header information from a server
+const __xhttp =new XMLHttpRequest();
+ __xhttp.onload = function() {
+       document.getElementById("demo3").innerHTML = this.getResponseHeader("Last-Modified");
+    }
+
+    //Send a request to the server
+    __xhttp.open("GET", "ajax_info.txt");
+    __xhttp.send();
