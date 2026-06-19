@@ -18,6 +18,8 @@ function $loadDoc() {
             document.getElementById("demo1").innerHTML = this.responseText;
         }
     }
+
+    //Send a request to the server
     $xhttp.open("GET", "ajax_info.txt");
     $xhttp.send();
 }
